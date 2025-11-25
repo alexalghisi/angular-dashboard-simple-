@@ -1,0 +1,22 @@
+<div class="widget-card" [style.border-left-color]="widget.color">
+  <div class="widget-header">
+    <div class="widget-icon" [style.background-color]="widget.color + '20'">
+      <span class="icon">{{ widget.icon }}</span>
+    </div>
+    <div class="widget-info">
+      <h3 class="widget-title">{{ widget.title }}</h3>
+      <p class="widget-value">{{ formatValue(widget.value) }}</p>
+    </div>
+  </div>
+  
+  <div class="widget-footer" *ngIf="widget.change !== undefined">
+    <span 
+      class="widget-change" 
+      [class.increase]="widget.changeType === 'increase'"
+      [class.decrease]="widget.changeType === 'decrease'"
+      [class.neutral]="widget.changeType === 'neutral'">
+      {{ formatChange(widget.change) }}
+    </span>
+    <span class="widget-label">vs last month</span>
+  </div>
+</div>
