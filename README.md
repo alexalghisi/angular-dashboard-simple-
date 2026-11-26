@@ -2,6 +2,10 @@
 
 A production-ready, simple Angular dashboard built following senior-level best practices.
 
+**Download:** [latest release](https://github.com/alexalghisi/angular-dashboard-simple-/releases/latest)
+
+![angular-dashboard-simple- running](docs/preview.png)
+
 ## Features
 
 - ✅ **Type Safety**: Strict TypeScript configuration with full type coverage
